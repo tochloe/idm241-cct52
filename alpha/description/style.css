@@ -1,0 +1,9 @@
+html {
+    --accent: # ;
+    --
+}
+
+@font-face {
+    font-family:"Albert Sans" face;
+    src: url(./albert);
+}
