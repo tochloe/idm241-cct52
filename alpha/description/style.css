@@ -1,9 +1,27 @@
 html {
-    --accent: # ;
-    --
+    --accent: #D3FB53 ;
+    --main: #062326 ; 
+    --white: #FAFFEC;
 }
 
 @font-face {
-    font-family:"Albert Sans" face;
-    src: url(./albert);
+    font-family:"Albert Sans";
+    src: url(./AlbertSans-VariableFont_wght.ttf);
+
+    font-family: "Hedvig Letter Serif";
+    src: url(./HedvigLettersSerif-Regular-VariableFont_opsz.ttf)
 }
+
+body{
+    background-color: var(--white);
+    color: var(--main);
+}
+
+h{
+    font-family: "Albert Sans";
+}
+
+. {
+
+}
+
