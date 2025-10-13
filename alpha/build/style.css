@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Noi Grotesk', sans-serif;
+    src: url(./NoiVariableFixTrialGX.ttf);
+    weight: 100 900;
+}
+
+html {
+    --bgwhite: #FAFFEC;
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #2E6AFF;
+}
+
+body {
+    background-color: var(--bgwhite);
+    color: var(--black);
+    font-family: 'Noi Grotesk', sans-serif;
+}
+
+.handshakecard {
+    background-image: url(./handshake.png);
+    background-size: cover;
+    height: 408px;
+    width: 586px;
+
+}
