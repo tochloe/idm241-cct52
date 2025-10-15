@@ -6,15 +6,57 @@
 
 html {
     --bgwhite: #FAFFEC;
-    --white: #ffffff;
     --black: #000000;
-    --blue: #2E6AFF;
+    --accent: #D3FB53 ;
+    --main: #062326 ;
 }
 
 body {
     background-color: var(--bgwhite);
-    color: var(--black);
+    color: var(--main);
     font-family: 'Noi Grotesk', sans-serif;
+   
+}
+
+.center {
+ display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+a{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.readmore{
+    display: flex;
+    width: 200px;
+    height: 29px;
+    padding-right: 53px;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 15px; 
+    left: 12px;
+    gap: 27px;
+}
+
+.readmore:hover {
+    cursor: pointer;
+}
+
+.readmore-arrow {
+      transition: transform 100ms ease-in-out;
+}
+
+.readmore:hover .readmore-arrow {
+  transform: translateX(20px);
 }
 
 .handshakecard {
@@ -22,5 +64,14 @@ body {
     background-size: cover;
     height: 408px;
     width: 586px;
+    position: relative;
 
+}
+
+.first {
+    font-weight: 800;
+}
+
+.desc {
+    margin: 20px;
 }
