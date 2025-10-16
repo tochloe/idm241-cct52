@@ -75,3 +75,7 @@ a{
 .desc {
     margin: 20px;
 }
+
+li{
+    list-style-type: none;
+}
