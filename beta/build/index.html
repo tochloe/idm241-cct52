@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Beta Build</title>
+</head>
+<body>
+
+     <div class="container">
+        <!-- Top area for caption -->
+        <div class="caption-area">
+            <!-- Space for future caption -->
+        </div>
+
+        <!-- Post container -->
+        <div class="post-container">
+            <!-- Top divider line -->
+            <div class="divider-top"></div>
+
+            <!-- User info section -->
+            <div class="user-info">
+                <img src="./profile.png" alt="Profile Picture" class="user-avatar">
+                <div class="user-details">
+                    <h2 class="user-name">Sophia Lo</h2>
+                    <p class="user-subtitle">Chemistry @Jefferson</p>
+                </div>
+                <span class="post-time">2w</span>
+            </div>
+
+            <!-- Post text -->
+            <p class="post-text">We're looking for Chemistry PhD experts to join our Handshake AI Fellowship. Handshake AI is a program that connects students and professionals with top AI labs, where your expertise helps challenge and improve AI models - pushing them beyond the limits of internet-trained data.</p>
+
+            <!-- Post content wrapper -->
+            <div class="post-content-wrapper">
+                <!-- More button -->
+                <button class="more-button" id="moreButton">...more</button>
+
+                <!-- Expanded content -->
+                <div class="expanded-content" id="expandedContent">
+                    <p class="expanded-text">
+                        <strong>Why join:</strong><br><br>
+                        🌍 Remote & asynchronous — work independently, anywhere<br><br>
+                        ⏰ Flexible hours<br><br>
+                        💸 Competitive hourly pay<br><br>
+                        🤖 Define the future of AI — while building a network of brilliant peers.<br><br>
+                        🔗 Learn more & apply here: <a href="https://joinhandshake.com/fellowship-program/opportunities/chemistry-ai-trainer?domain=chemistry&degree=doctorate&utm_content=sitelink_chemistry&utm_source=google&utm_medium=cpc&utm_campaign=20250901_All_General_Brand_Search&campaign_id=22967191596&utm_content=772168639819&utm_term=handshake%20ai%20careers&adgroup=Handshake_AI&device=c&placement=&gad_source=1&gad_campaignid=22967191596&gbraid=0AAAABATzyyK5f4BtHfBl1A8cw4oLszyV0&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUmToV2EZclKkrWcdtNqXP7Ycp1sGJCTNi9bzQ2FKuAIrUt5I0XYw4aAos9EALw_wcB" target="_blank" >https://joinhandshake.com/fellowship-program/opportunities/chemistry-ai-trainer?domain=chemistry&degree=doctorate&utm_content=sitelink_chemistry&utm_source=google&utm_medium=cpc&utm_campaign=20250901_All_General_Brand_Search&campaign_id=22967191596&utm_content=772168639819&utm_term=handshake%20ai%20careers&adgroup=Handshake_AI&device=c&placement=&gad_source=1&gad_campaignid=22967191596&gbraid=0AAAABATzyyK5f4BtHfBl1A8cw4oLszyV0&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUmToV2EZclKkrWcdtNqXP7Ycp1sGJCTNi9bzQ2FKuAIrUt5I0XYw4aAos9EALw_wcB</a>
+                    </p>
+                </div>
+
+                <!-- Card with image -->
+                
+                <div class="post-card" id="postCard">
+                    <a href="https://joinhandshake.com/fellowship-program/opportunities/chemistry-ai-trainer?domain=chemistry&degree=doctorate&utm_content=sitelink_chemistry&utm_source=google&utm_medium=cpc&utm_campaign=20250901_All_General_Brand_Search&campaign_id=22967191596&utm_content=772168639819&utm_term=handshake%20ai%20careers&adgroup=Handshake_AI&device=c&placement=&gad_source=1&gad_campaignid=22967191596&gbraid=0AAAABATzyyK5f4BtHfBl1A8cw4oLszyV0&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUmToV2EZclKkrWcdtNqXP7Ycp1sGJCTNi9bzQ2FKuAIrUt5I0XYw4aAos9EALw_wcB" target="_blank">
+                    <div class="card-image">
+                      <img src="./handshake_cover.png" alt="Handshake AI">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Chemistry Expert - Handshake AI Fellowship</h3>
+                        <p class="card-subtitle">Apply to the Handshake AI Fellowship</p>
+                        <p class="card-link">joinhandshake.com</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Action buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn heart-btn" id="heartBtn" aria-label="Like">
+                        <svg class="icon" viewBox="0 0 22 20" fill="none">
+                            <path d="M19.7913 2.11183C19.2805 1.60083 18.6741 1.19547 18.0066 0.91891C17.3392 0.642347 16.6238 0.5 15.9013 0.5C15.1788 0.5 14.4634 0.642347 13.7959 0.91891C13.1285 1.19547 12.522 1.60083 12.0113 2.11183L10.9513 3.17183L9.89129 2.11183C8.8596 1.08013 7.46032 0.500535 6.00129 0.500535C4.54226 0.500535 3.14298 1.08013 2.11129 2.11183C1.0796 3.14352 0.5 4.54279 0.5 6.00183C0.5 7.46086 1.0796 8.86013 2.11129 9.89183L10.9513 18.7318L19.7913 9.89183C20.3023 9.38107 20.7076 8.77464 20.9842 8.10718C21.2608 7.43972 21.4031 6.72431 21.4031 6.00183C21.4031 5.27934 21.2608 4.56393 20.9842 3.89647C20.7076 3.22901 20.3023 2.62258 19.7913 2.11183Z" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="action-btn bookmark-btn" id="bookmarkBtn" aria-label="Bookmark">
+                        <svg class="icon" viewBox="0 0 15 19" fill="none">
+                            <path d="M14.5 18.5L7.5 13.5L0.5 18.5V2.5C0.5 1.96957 0.710714 1.46086 1.08579 1.08579C1.46086 0.710714 1.96957 0.5 2.5 0.5H12.5C13.0304 0.5 13.5391 0.710714 13.9142 1.08579C14.2893 1.46086 14.5 1.96957 14.5 2.5V18.5Z" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Bottom divider line -->
+                <div class="divider-bottom"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
