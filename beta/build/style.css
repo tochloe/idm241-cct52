@@ -1,3 +1,12 @@
+html {
+    --gray: #8E8E8E;
+    --white: #FFFFFF;
+    --black: #121212;
+    --accent: #D3FB53;
+    --main: #062326;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +19,10 @@
     weight: 100 900;
 }
 
-@font-face {
-    font-family: ;
-    src: url();
-}
 
 body {
     font-family: 'Noi Grotesk', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -45,14 +50,14 @@ a{
 .post-container {
     width: 100%;
     max-width: 800px;
-    background-color: white;
+    background-color: var(--white);
     position: relative;
     padding: 0 33px;
 }
 
 .divider-top {
     height: 1px;
-    background-color: #8E8E8E;
+    background-color: var(--gray);
     width: 100%;
     margin-bottom: 29px;
 }
@@ -79,14 +84,14 @@ a{
 .user-name {
     font-size: 24px;
     font-weight: 700;
-    color: #121212;
+    color: var(--black);
     margin-bottom: 5px;
 }
 
 .user-subtitle {
     font-size: 16px;
     font-weight: 600;
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 .post-time {
@@ -95,13 +100,13 @@ a{
     top: 31px;
     font-size: 16px;
     font-weight: 600;
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 .post-text {
     font-size: 16px;
     font-weight: 700;
-    color: #121212;
+    color: var(--black);
     line-height: 1.5;
     margin-bottom: 20px;
     margin-left: 78px;
@@ -114,7 +119,7 @@ a{
 
 /* More button */
 .more-button {
-    background: linear-gradient(135deg, #062326 0%, #062326 100%);
+    background: linear-gradient(135deg, var(--main) 0%, var(--main) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -132,7 +137,7 @@ a{
 }
 
 .more-button:hover {
-    background: linear-gradient(135deg, #062326 0%, #D3FB53 100%);
+    background: linear-gradient(135deg, var(--main) 0%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -160,28 +165,28 @@ a{
 .expanded-text {
     font-size: 16px;
     font-weight: 700;
-    color: #121212;
+    color: var(--black);
     line-height: 1.5;
 }
 
 .expanded-text a {
-    color: #121212;
+    color: var(--black);
     text-decoration: underline;
 }
 
 /* Post card */
 .post-card {
-    background-color: white;
-    border-radius: 20px;
+    background-color: var(--white);
+    border-radius: 30px;
     overflow: hidden;
     margin-bottom: 15px;
     transition: all 0.3s ease;
-    border: 1px solid #8e8e8e;
+    border: 1px solid var(--gray);
 }
 
 .post-card:hover {
-    box-shadow: 0px 4px 10.5px 0px #D3FB53;
-    border-color: #D3FB53;
+    box-shadow: 0px 4px 10.5px 0px var(--accent);
+    border-color: var(--accent);
 }
 
 .card-image {
