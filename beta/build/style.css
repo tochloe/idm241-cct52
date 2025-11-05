@@ -5,6 +5,9 @@ html {
     --accent: #D3FB53;
     --main: #062326;
 
+    --pink: #D36299;
+    --purple: #8A38F5;
+
 }
 
 * {
@@ -210,7 +213,7 @@ a{
 
 .card-content {
     padding: 20px 15px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .post-card:hover .card-content {
@@ -265,26 +268,26 @@ a{
 
 /* Heart button hover state - fill with #062326 */
 .heart-btn:hover .icon {
-    fill: #062326;
-    stroke: #062326;
+    fill: var(--main);
+    stroke: var(--main);
 }
 
 /* Heart button clicked state - fill with #D36299 */
 .heart-btn.clicked .icon {
-    fill: #D36299;
-    stroke: #D36299;
+    fill: var(--pink);
+    stroke: var(--pink);
 }
 
 /* Bookmark button hover state - fill with #062326 */
 .bookmark-btn:hover .icon {
-    fill: #062326;
-    stroke: #062326;
+    fill: var(--main);
+    stroke: var(--main);
 }
 
 /* Bookmark button clicked state - fill with #8A38F5 */
 .bookmark-btn.clicked .icon {
-    fill: #8A38F5;
-    stroke: #8A38F5;
+    fill: var(--purple);
+    stroke: var(--purple);
 }
 
 .divider-bottom {
