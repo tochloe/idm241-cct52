@@ -132,10 +132,11 @@ a{
     font-style: italic;
     text-decoration: underline;
     cursor: pointer;
-    padding: 0;
+    padding: 2px 0;
+    line-height: 1.4;
     margin-bottom: 15px;
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: background-position 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
     position: relative;
 }
 
@@ -263,7 +264,8 @@ a{
     stroke: #595959;
     stroke-width: 1.5;
     fill: none;
-    transition: all 0.3s ease;
+    transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Heart button hover state - fill with #062326 */
