@@ -387,8 +387,8 @@ a{
 
 /* Comment button clicked state - fill with #D3FB53 */
 .comment-btn.clicked .icon {
-    fill: #D3FB53;
-    stroke: #062326;
+    fill: var(--accent);
+    stroke: var(--accent);
     fill-opacity: 1;
 }
 
