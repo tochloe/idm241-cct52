@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>Final Build</title>
+</head>
+<body>
+
+
+
+     <div class="container">
+<h1>Final Build</h1>
+
+        <!-- Top area for caption -->
+        <div class="caption-area">
+            <!-- Space for future caption -->
+        </div>
+
+        <!-- Post container -->
+        <div class="post-container">
+            <!-- Top divider line -->
+            <div class="divider-top"></div>
+
+            <!-- User info section -->
+            <div class="user-info">
+                <img src="./profile.png" alt="Profile Picture" class="user-avatar">
+                <div class="user-details">
+                    <h2 class="user-name">Sophia Lo</h2>
+                    <p class="user-subtitle">Chemistry @Jefferson</p>
+                </div>
+                <span class="post-time">2w</span>
+            </div>
+
+            <!-- Post text -->
+            <p class="post-text">We're looking for Chemistry PhD experts to join our Handshake AI Fellowship. Handshake AI is a program that connects students and professionals with top AI labs, where your expertise helps challenge and improve AI models - pushing them beyond the limits of internet-trained data.</p>
+
+            <!-- Post content wrapper -->
+            <div class="post-content-wrapper">
+                <!-- More button -->
+                <button class="more-button" id="moreButton">...more</button>
+
+                <!-- Expanded content -->
+                <div class="expanded-content" id="expandedContent">
+                    <p class="expanded-text">
+                        <strong>Why join:</strong><br><br>
+                        🌍 Remote & asynchronous — work independently, anywhere<br><br>
+                        ⏰ Flexible hours<br><br>
+                        💸 Competitive hourly pay<br><br>
+                        🤖 Define the future of AI — while building a network of brilliant peers.<br><br>
+                        🔗 Learn more & apply here: <a href="https://joinhandshake.com/fellowship-program/opportunities/chemistry-ai-trainer?domain=chemistry&degree=doctorate&utm_content=sitelink_chemistry&utm_source=google&utm_medium=cpc&utm_campaign=20250901_All_General_Brand_Search&campaign_id=22967191596&utm_content=772168639819&utm_term=handshake%20ai%20careers&adgroup=Handshake_AI&device=c&placement=&gad_source=1&gad_campaignid=22967191596&gbraid=0AAAABATzyyK5f4BtHfBl1A8cw4oLszyV0&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUmToV2EZclKkrWcdtNqXP7Ycp1sGJCTNi9bzQ2FKuAIrUt5I0XYw4aAos9EALw_wcB" target="_blank" >https://joinhandshake.com/fellowship-program/opportunities/chemistry-ai-trainer?domain=chemistry&degree=doctorate&utm_content=sitelink_chemistry&utm_source=google&utm_medium=cpc&utm_campaign=20250901_All_General_Brand_Search&campaign_id=22967191596&utm_content=772168639819&utm_term=handshake%20ai%20careers&adgroup=Handshake_AI&device=c&placement=&gad_source=1&gad_campaignid=22967191596&gbraid=0AAAABATzyyK5f4BtHfBl1A8cw4oLszyV0&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUmToV2EZclKkrWcdtNqXP7Ycp1sGJCTNi9bzQ2FKuAIrUt5I0XYw4aAos9EALw_wcB</a>
+                    </p>
+
+                     <button class="see-less-button" id="seeLessButton">...see less</button>
+                
+                </div>
+
+                <!-- Card with image -->
+                
+                <div class="post-card" id="postCard">
+                    <a href="https://joinhandshake.com/fellowship-program/opportunities/chemistry-ai-trainer?domain=chemistry&degree=doctorate&utm_content=sitelink_chemistry&utm_source=google&utm_medium=cpc&utm_campaign=20250901_All_General_Brand_Search&campaign_id=22967191596&utm_content=772168639819&utm_term=handshake%20ai%20careers&adgroup=Handshake_AI&device=c&placement=&gad_source=1&gad_campaignid=22967191596&gbraid=0AAAABATzyyK5f4BtHfBl1A8cw4oLszyV0&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUmToV2EZclKkrWcdtNqXP7Ycp1sGJCTNi9bzQ2FKuAIrUt5I0XYw4aAos9EALw_wcB" target="_blank">
+                    <div class="card-image">
+                      <img src="./handshake_cover.png" alt="Handshake AI">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Chemistry Expert - Handshake AI Fellowship</h3>
+                        <p class="card-subtitle">Apply to the Handshake AI Fellowship</p>
+                        <p class="card-link">joinhandshake.com</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Action buttons -->
+                 <div class="action-buttons">
+                    <button class="action-btn heart-btn" id="heartBtn" aria-label="Like">
+                        <svg class="icon" viewBox="0 0 22 20" fill="none">
+                            <path d="M19.7913 2.11183C19.2805 1.60083 18.6741 1.19547 18.0066 0.91891C17.3392 0.642347 16.6238 0.5 15.9013 0.5C15.1788 0.5 14.4634 0.642347 13.7959 0.91891C13.1285 1.19547 12.522 1.60083 12.0113 2.11183L10.9513 3.17183L9.89129 2.11183C8.8596 1.08013 7.46032 0.500535 6.00129 0.500535C4.54226 0.500535 3.14298 1.08013 2.11129 2.11183C1.0796 3.14352 0.5 4.54279 0.5 6.00183C0.5 7.46086 1.0796 8.86013 2.11129 9.89183L10.9513 18.7318L19.7913 9.89183C20.3023 9.38107 20.7076 8.77464 20.9842 8.10718C21.2608 7.43972 21.4031 6.72431 21.4031 6.00183C21.4031 5.27934 21.2608 4.56393 20.9842 3.89647C20.7076 3.22901 20.3023 2.62258 19.7913 2.11183Z" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="action-btn comment-btn" id="commentBtn" aria-label="Comment">
+                        <svg class="icon" viewBox="0 0 22 22" fill="none">
+                            <path d="M21 10.5C21.0034 11.8199 20.6951 13.1219 20.1 14.3C19.3944 15.7118 18.3098 16.8992 16.9674 17.7293C15.6251 18.5594 14.0782 18.9994 12.5 19C11.1801 19.0034 9.87812 18.6951 8.7 18.1L1 21L3.9 13.3C3.30493 12.1219 2.99656 10.8199 3 9.5C3.00061 7.92176 3.44061 6.37485 4.27072 5.03255C5.10083 3.69025 6.28825 2.60557 7.7 1.9C8.87812 1.30493 10.1801 0.996557 11.5 1H12C14.0843 1.11502 16.053 1.99479 17.5291 3.47091C19.0052 4.94703 19.885 6.91568 20 9V10.5Z" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="action-btn bookmark-btn" id="bookmarkBtn" aria-label="Bookmark">
+                        <svg class="icon" viewBox="0 0 15 19" fill="none">
+                            <path d="M14.5 18.5L7.5 13.5L0.5 18.5V2.5C0.5 1.96957 0.710714 1.46086 1.08579 1.08579C1.46086 0.710714 1.96957 0.5 2.5 0.5H12.5C13.0304 0.5 13.5391 0.710714 13.9142 1.08579C14.2893 1.46086 14.5 1.96957 14.5 2.5V18.5Z" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="comment-section" id="commentSection">
+                    <div class="comment-input-wrapper">
+                        <input type="text" class="comment-input" id="commentInput" placeholder="comment" />
+                        <button class="comment-send-btn" id="commentSendBtn" aria-label="Send comment">
+                            <svg viewBox="0 0 20 20" fill="none">
+                                <path d="M18.3333 1.66663L9.16666 10.8333M18.3333 1.66663L12.5 18.3333L9.16666 10.8333M18.3333 1.66663L1.66666 7.49996L9.16666 10.8333" 
+                                      stroke="#595959" 
+                                      stroke-width="2" 
+                                      stroke-linecap="round" 
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Bottom divider line -->
+
+
+                <div class="divider-bottom"></div>
+            </div>
+        </div>
+
+
+<!--TRIGGERS-->
+<div class="doc-section">
+            <h2 class="doc-section-title">Triggers</h2>
+            <p class="doc-subtitle">Handshake Post Container</p>
+
+            <hr class="doc-divider">
+            
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">More Button</h3>
+                <ol class="doc-list">
+                    <li>Hover On "...More" button</li>
+                    <li>Hover Off "...More" button</li>
+                    <li>Click "...More" button</li>
+                </ol>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title doc-green">Heart Button</h3>
+                <ol class="doc-list">
+                    <li>Hover On the heart Icon</li>
+                    <li>Hover Off the heart Icon</li>
+                    <li>Click the heart Icon</li>
+                    <li>Hover On the number of likes</li>
+                    <li>Hover Off the number of likes</li>
+                    <li>Click to reveal who has liked</li>
+                </ol>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title doc-green">Bookmark Button</h3>
+                <ol class="doc-list">
+                    <li>Hover On the bookmark Icon</li>
+                    <li>Hover Off the bookmark Icon</li>
+                    <li>Click the bookmark Icon</li>
+                </ol>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title doc-green">Post Contents</h3>
+                <ol class="doc-list">
+                    <li>Hover On links in the post</li>
+                    <li>Hover Off the links in the post</li>
+                    <li>Click Post</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- RULES-->
+        <div class="doc-section">
+            <h2 class="doc-section-title">Rules</h2>
+            <hr class="doc-divider">
+            
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">More Button</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>The "...More" button will change color on hover in 0.3 seconds</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>The "...More" button will return to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>The caption will expand on the top of the post in 0.4 seconds, image connected with post will shift downward giving more room for the now elongated caption</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">Heart Button</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>Heart icon fills in with a darker color</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>The heart icon returns to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>Heart icon turns into pink</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">Bookmark Button</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>The bookmark icon fills in with a darker color</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>The bookmark icon returns to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>Bookmark icon turns into purple</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">Post Content</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>Link becomes emphasized</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>Image returns to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>Opens to a new page</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEEDBACK -->
+        <div class="doc-section">
+            <h2 class="doc-section-title">Feedback</h2>
+            <hr class="doc-divider">
+            
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">More Button</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>The "...More" button will change color on hover in 0.3 seconds</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>The "...More" button will return to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>The caption will expand on the top of the post in 0.4 seconds, image connected with post will shift downward giving more room for the now elongated caption</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">Heart Button</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>Heart icon fills in with a darker color</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>The heart icon returns to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>Heart icon turns into pink</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">Bookmark Button</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>The bookmark icon fills in with a darker color</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>The bookmark icon returns to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>Bookmark icon turns into purple</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="doc-subsection">
+                <h3 class="doc-subsection-title">Post Content</h3>
+                <div class="doc-rules-content">
+                    <p class="doc-italic">Hover On</p>
+                    <ol class="doc-list">
+                        <li>Link becomes emphasized</li>
+                        <li>Cursor becomes pointer</li>
+                    </ol>
+                    <p class="doc-italic">Hover Off</p>
+                    <ol class="doc-list">
+                        <li>Image returns to its original state</li>
+                        <li>Pointer returns to cursor</li>
+                    </ol>
+                    <p class="doc-italic">Click</p>
+                    <ol class="doc-list">
+                        <li>Opens to a new page</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOOPS -->
+        <div class="doc-section">
+            <h2 class="doc-section-title">Loops</h2>
+            <hr class="doc-divider">
+            <p class="doc-content">N/A</p>
+        </div>
+
+        <!--MODES-->
+        <div class="doc-section">
+            <h2 class="doc-section-title">Modes</h2>
+            <hr class="doc-divider">
+            <p class="doc-content">N/A</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
