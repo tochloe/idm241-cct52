@@ -292,31 +292,64 @@ a{
     height: 24px;
     stroke: #595959;
     stroke-width: 1.5;
-    fill: none;
-    fill-opacity: 0;
+    fill: var(--white);
+    fill-opacity: 1;
     transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
                 stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                fill-opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                fill-opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.heart-btn:hover .icon {
+.action-btn.fade-out .icon {
+    opacity: 0.3;
+}
+
+
+
+/* Heart button hover state - fill with #062326 */
+.heart-btn:not(.clicked):hover .icon {
     fill: var(--main);
     stroke: var(--main);
     fill-opacity: 1;
 }
 
+/* Heart button clicked state - fill with #D36299 */
 .heart-btn.clicked .icon {
-    fill: var(--pink);
-    stroke: var(--pink);
-    fill-opacity: 1;
+    fill: var(--pink) !important;
+    stroke: var(--pink) !important;
+    fill-opacity: 1 !important;
+    opacity: 1 !important;
 }
 
-
-.bookmark-btn:hover .icon {
+/* Bookmark button hover state - fill with #062326 */
+.bookmark-btn:not(.clicked):hover .icon {
     fill: var(--main);
     stroke: var(--main);
     fill-opacity: 1;
+}
+
+/* Bookmark button clicked state - fill with #8A38F5 */
+.bookmark-btn.clicked .icon {
+    fill: var(--purple) !important;
+    stroke: var(--purple) !important;
+    fill-opacity: 1 !important;
+    opacity: 1 !important;
+}
+
+/* Comment button hover state - fill with #062326 */
+.comment-btn:not(.clicked):hover .icon {
+    fill: var(--main);
+    stroke: var(--main);
+    fill-opacity: 1;
+}
+
+/* Comment button clicked state - fill with #D3FB53 */
+.comment-btn.clicked .icon {
+    fill: var(--accent) !important;
+    stroke: var(--accent) !important;
+    fill-opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 
@@ -378,19 +411,7 @@ a{
     height: 20px;
 }
 
-/* Comment button hover state - fill with #062326 */
-.comment-btn:not(.clicked):hover .icon {
-    fill: #062326;
-    stroke: #062326;
-    fill-opacity: 1;
-}
 
-/* Comment button clicked state - fill with #D3FB53 */
-.comment-btn.clicked .icon {
-    fill: var(--accent);
-    stroke: var(--accent);
-    fill-opacity: 1;
-}
 
 .comment-send-btn svg {
     width: 100%;
@@ -401,11 +422,6 @@ a{
      fill: var(--main);
     stroke: var(--main);
     fill-opacity: 1;
-}
-
-.bookmark-btn.clicked .icon {
-    fill: var(--purple);
-    stroke: var(--purple);
 }
 
 .divider-bottom {

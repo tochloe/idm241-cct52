@@ -34,11 +34,14 @@
             
 
                         <div class="card-body">
-                            <p class="section-title"> More Button</p>
+                            <p class="section-title"> More/Less Button</p>
                             <ol class="numbered-list">
                                 <li>Hover On "...More" </li>
                                 <li>Hover Off "...More" </li>
-                                <li>Click "...More" </li>
+                                <li>Click "...More"</li>
+                                <li>Hover On "...see less" </li>
+                                <li>Hover Off "...see less" </li>
+                                <li>Click "...see less"</li>
                             </ol>
 
                             <p class="section-title">Heart Button</p>
@@ -89,19 +92,22 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li>The "...More" button will swiftly change color on hover</li>
+                                    <li>The "...more" button will linearly ease through a gradient in 0.4s on hover</li>
+                                    <li>The "...see less" button will linearly ease through a gradient in 0.4s on hover</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The "...More" button will return to its original state</li>
+                                    <li>The "...more" button will linearly ease back to a solid color (#062326)</li>
+                                    <li>The "...see less" button will linearly ease back to a solid color (#062326)</li>
                                     <li>Pointer returns to cursor</li>
                                 </ol>
                                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>The caption will expand on the top of the post, image connected with post will shift downward giving more room for the now elongated caption</li>
+                                    <li>The caption will expand on the top of the post, image connected with post will shift downward giving more room for the now elongated caption. The "...more" button disappears. The "...see less" button appears.</li>
+                                    <li>The caption will move back upwards, image shifts upward to its orginal state. The "...see less" button dissappears. The "...more" button reappears.</li>
                                 </ol>
                             </div>
 
@@ -109,19 +115,19 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li> Heart icon fills in with a darker color</li>
+                                    <li>Heart icon eases in from white into a dark teal, #062326, in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The heart icon returns to its original state</li>
+                                    <li>The heart icon eases back into a white fill in 0.4s</li>
                                     <li>Pointer returns to cursor</li>
                                 </ol>
                                 
                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>Heart icon turns into pink</li>
+                                    <li>Heart icon eases into a pink fill within 0.4s</li>
                                 </ol>
                                 
                             </div>
@@ -130,14 +136,14 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li>The bookmark icon fills in with a darker color</li>
+                                    <li>Bookmark icon eases in from white into a dark teal, #062326, in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
 
                                 
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The bookmark icon fills in with a darker color</li>
+                                    <li>The bookmark icon eases back into a white fill in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 <p class="rule-label">Hover On</p>
@@ -148,7 +154,7 @@
                                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>Bookmark icon turns into purple</li>
+                                    <li>Bookmark icon eases into a purple fill within 0.4s</li>
                                 </ol>
                                 
                             </div>
@@ -157,20 +163,20 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li> Comment icon fills in with a darker color</li>
+                                    <li>Comment icon eases in from white into a dark teal, #062326, in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The Comment icon returns to its original state</li>
+                                    <li>The comment icon eases back into a white fill in 0.4s</li>
                                     <li>Pointer returns to cursor</li>
                                 </ol>
                                 
                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>Comment icon turns into green</li>
-                                    <li>Comment box is revealed</li>
+                                    <li>Comment icon eases into a green fill within 0.4s</li>
+                                    <li>Comment box fades in from under the row of buttons</li>
                                 </ol>
                                 
                             </div>
@@ -181,14 +187,13 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li>Link becomes emphasized</li>
                                     <li>Cursor becomes pointer</li>
-                                    <li>Card has a green drop shadow</li>
+                                    <li>A green drop shadow eases in, illuminating the card within 0.4s</li>
                                 </ol>
                                 
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>Image returns to its original state</li>
+                                    <li>Green shadow fades out in 0.4s</li>
                                     <li>Pointer returns to cursor</li>
                                     <li>Card returns to its orginal state</li>
                                 </ol>
@@ -212,19 +217,22 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li>The "...More" button will swiftly change color on hover</li>
+                                    <li>The "...more" button will linearly ease through a gradient in 0.4s on hover</li>
+                                    <li>The "...see less" button will linearly ease through a gradient in 0.4s on hover</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The "...More" button will return to its original state</li>
+                                    <li>The "...more" button will linearly ease back to a solid color (#062326)</li>
+                                    <li>The "...see less" button will linearly ease back to a solid color (#062326)</li>
                                     <li>Pointer returns to cursor</li>
                                 </ol>
                                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>The caption will expand on the top of the post, image connected with post will shift downward giving more room for the now elongated caption</li>
+                                    <li>The caption will expand on the top of the post, image connected with post will shift downward giving more room for the now elongated caption. The "...more" button disappears. The "...see less" button appears.</li>
+                                    <li>The caption will move back upwards, image shifts upward to its orginal state. The "...see less" button dissappears. The "...more" button reappears.</li>
                                 </ol>
                             </div>
 
@@ -232,19 +240,19 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li> Heart icon fills in with a darker color</li>
+                                    <li>Heart icon eases in from white into a dark teal, #062326, in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The heart icon returns to its original state</li>
+                                    <li>The heart icon eases back into a white fill in 0.4s</li>
                                     <li>Pointer returns to cursor</li>
                                 </ol>
                                 
                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>Heart icon turns into pink</li>
+                                    <li>Heart icon eases into a pink fill within 0.4s</li>
                                 </ol>
                                 
                             </div>
@@ -253,14 +261,14 @@
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li>The bookmark icon fills in with a darker color</li>
+                                    <li>Bookmark icon eases in from white into a dark teal, #062326, in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
 
                                 
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The bookmark icon fills in with a darker color</li>
+                                    <li>The bookmark icon eases back into a white fill in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 <p class="rule-label">Hover On</p>
@@ -271,47 +279,48 @@
                                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>Bookmark icon turns into purple</li>
+                                    <li>Bookmark icon eases into a purple fill within 0.4s</li>
                                 </ol>
                                 
                             </div>
 
-                          <p class="section-title">Comment Button</p>
+                            <p class="section-title">Comment Button</p>
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li> Comment icon fills in with a darker color</li>
+                                    <li>Comment icon eases in from white into a dark teal, #062326, in 0.4s</li>
                                     <li>Cursor becomes pointer</li>
                                 </ol>
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>The Comment icon returns to its original state</li>
+                                    <li>The comment icon eases back into a white fill in 0.4s</li>
                                     <li>Pointer returns to cursor</li>
                                 </ol>
                                 
                 
                                 <p class="rule-label">Click</p>
                                 <ol class="numbered-list">
-                                    <li>Comment icon turns into green</li>
-                                    <li>Comment box is revealed</li>
+                                    <li>Comment icon eases into a green fill within 0.4s</li>
+                                    <li>Comment box fades in from under the row of buttons</li>
                                 </ol>
                                 
                             </div>
+                          
+
 
                             <p class="section-title">Post Content</p>
                             <div class="rules-content">
                                 <p class="rule-label">Hover On</p>
                                 <ol class="numbered-list">
-                                    <li>Link becomes emphasized</li>
                                     <li>Cursor becomes pointer</li>
-                                    <li>Card has a green drop shadow</li>
+                                    <li>A green drop shadow eases in, illuminating the card within 0.4s</li>
                                 </ol>
                                 
                                 <p class="rule-label">Hover Off</p>
                                 <ol class="numbered-list">
-                                    <li>Image returns to its original state</li>
+                                    <li>Green shadow fades out in 0.4s</li>
                                     <li>Pointer returns to cursor</li>
-                                    <li>Card returns to its original state</li>
+                                    <li>Card returns to its orginal state</li>
                                 </ol>
                                 
                                 

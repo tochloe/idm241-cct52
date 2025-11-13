@@ -40,51 +40,54 @@ document.addEventListener('DOMContentLoaded', function() {
         moreButton.classList.remove('hidden');
     });
 
-    // Heart button click handler
-    heartBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        heartClicked = !heartClicked;
-        
-        if (heartClicked) {
-            heartBtn.classList.add('clicked');
-        } else {
-            heartBtn.classList.remove('clicked');
-        }
-    });
 
-    // Bookmark button click handler
-    bookmarkBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        bookmarkClicked = !bookmarkClicked;
-        
-        if (bookmarkClicked) {
-            bookmarkBtn.classList.add('clicked');
-        } else {
-            bookmarkBtn.classList.remove('clicked');
-        }
-    });
 
-    // Comment button click handler
-    commentBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        commentClicked = !commentClicked;
-        
-        if (commentClicked) {
-            commentBtn.classList.add('clicked');
-            commentSection.classList.add('show');
-            commentInput.focus();
-        } else {
-            commentBtn.classList.remove('clicked');
+heartBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    heartClicked = !heartClicked;
+    
+    if (heartClicked) {
+        heartBtn.classList.add('clicked');
+    } else {
+        heartBtn.classList.add('fade-out');
+        setTimeout(function() {
+            heartBtn.classList.remove('clicked', 'fade-out');
+        }, 400);
+    }
+});
+
+// Bookmark button click handler
+bookmarkBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    bookmarkClicked = !bookmarkClicked;
+    
+    if (bookmarkClicked) {
+        bookmarkBtn.classList.add('clicked');
+    } else {
+        bookmarkBtn.classList.add('fade-out');
+        setTimeout(function() {
+            bookmarkBtn.classList.remove('clicked', 'fade-out');
+        }, 400);
+    }
+});
+
+// Comment button click handler
+commentBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    commentClicked = !commentClicked;
+    
+    if (commentClicked) {
+        commentBtn.classList.add('clicked');
+        commentSection.classList.add('show');
+        commentInput.focus();
+    } else {
+        commentBtn.classList.add('fade-out');
+        setTimeout(function() {
+            commentBtn.classList.remove('clicked', 'fade-out');
             commentSection.classList.remove('show');
-        }
-    });
-
-    // Prevent hover effect when button is clicked
-    heartBtn.addEventListener('mouseenter', function() {
-        if (!heartClicked) {
-            // Hover effect is handled by CSS
-        }
-    });
+        }, 400);
+    }
+});
 
     bookmarkBtn.addEventListener('mouseenter', function() {
         if (!bookmarkClicked) {
