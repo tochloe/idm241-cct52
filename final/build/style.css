@@ -130,25 +130,25 @@ a{
     font-size: 16px;
     font-weight: 700;
     font-style: italic;
-    color: #062326;
+    color: var(--main);
     position: relative;
     margin-bottom: 20px;
     transition: background-size 0.6s cubic-bezier(0.4, 0, 0.2, 1),
                 -webkit-text-fill-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: underline;
     text-decoration-color: transparent;
-    background: linear-gradient(90deg, #062326 0%, #D3FB53 100%);
+    background: linear-gradient(90deg, var(--main) 0%, var(--accent) 100%);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: #062326;
+    -webkit-text-fill-color: var(--main);
     display: inline-block;
     padding-right: 3px;
 }
 
 .more-button:hover {
-     background: linear-gradient(90deg, #062326 0%, #D3FB53 100%);
+     background: linear-gradient(90deg, var(--main) 0%, var(--accent) 100%);
     background-size: 100% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -170,25 +170,25 @@ a{
     font-size: 16px;
     font-weight: 700;
     font-style: italic;
-    color: #062326;
+    color: var(--main);
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
     transition: background-size 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: underline;
     text-decoration-color: transparent;
-    background: linear-gradient(90deg, #062326 0%, #062326 100%);
+    background: linear-gradient(90deg, var(--main) 0%, var(--main) 100%);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: #062326;
+    -webkit-text-fill-color: var(--main);
     display: inline-block;
     padding-right: 3px;
 }
 
 .see-less-button:hover {
-    background: linear-gradient(90deg, #062326 0%, #D3FB53 100%);
+    background: linear-gradient(90deg, var(--main) 0%, var(--accent) 100%);
     background-size: 100% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -252,9 +252,9 @@ a{
 
 .card-content {
      display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
-    align-items: center;
+    align-items: start;
     overflow: hidden;
     padding: 35px 20px;
 }
@@ -276,7 +276,7 @@ a{
 .card-link {
     font-size: 15px;
     font-weight: 400;
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 /* Action buttons */
@@ -433,7 +433,7 @@ a{
 
 .divider-bottom {
     height: 1px;
-    background-color: #8E8E8E;
+    background-color: var(--gray);
     width: calc(100% + 63px);
     margin-left: -63px;
 }
@@ -554,7 +554,7 @@ a{
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
-    color: black;
+    color: var(--black);
     margin: 0 0 0 0;
 }
 
@@ -680,7 +680,7 @@ a{
 
 
 .card {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 20px;
     border: 1px solid var(--black);
     width: 100%;
