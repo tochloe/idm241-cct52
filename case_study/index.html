@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM241 Case Study | Handshake Post Container</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Title and Hero Group -->
+        <div class="title-hero-group">
+            <!-- Title Section -->
+            <section class="title-section">
+                <h1>IDM241 Case Study | Handshake Post Container</h1>
+                <p class="subtitle">Dec. 11, 2025 | C. To</p>
+            </section>
+
+            <!-- Hero Image -->
+            <div class="hero-image"></div>
+        </div>
+
+        <!-- Overview Section -->
+        <section class="overview-section">
+            <div class="content-text">
+                <h2>Overview</h2>
+                <p>Inspired by Handshake's events at colleges across America, I thought what would not be a better way to incorporate this experience in my academics? Handshake's post feature lacks the interpersonal details the rest of the site seems to incorporate. I reimagined the Handshake post container as the solo UX/UI designer and developer by adding including their signature gradients within the buttons, extra details in hover states, and including a "see less" feature which they do not currently have (as of December 6, 2025).</p>
+            </div>
+            
+            <div class="overview-images">
+                <p class="image-caption">BIG fan @Handshake</p>
+                <img class="image-placeholder" src="handshake_fan1.png" alt="Me at a Handshake event in September">
+                <img class="image-placeholder" src="handshake_fan2.jpeg" alt="Me at a Handshake event in September">
+            </div>
+        </section>
+
+        <!-- Context Section -->
+        <section class="context-section">
+            <h2>Context</h2>
+            <div class="content-text">
+                <p>Handshake is a platform marketed as the "Gen Z alternative" to career finding. Designed for college students, Handshake provides services like building a professional social network, easy applications to a wide range of fields, and career advice for fresh grads.</p>
+                
+                <p>The attended task was to take an aspect of a website's microinteraction - in this case Handshake - to redesign in hopes to improve the current state of the given microinteraction. In its current state, the Handshake post found on any user's feed lacks feedback with the cursor not updating when hovering over clickable objects. In addition, Handshake's overall website design includes intricate microinteractions, the post design's lack thereof made it feel out of place overall.</p>
+                
+                <p>This 10-week long project allowed me to become the solo UX/UI designer and developer to improve aspects listed above while challenging my prior knowledge of HTML, CSS, and JavaScript.</p>
+            </div>
+        </section>
+
+        <!-- Process and Insight Section -->
+        <section class="process-section">
+            <h2>Process and Insight</h2>
+            <p>Being a regular Handshake user, I was already familiar with Handshake's desktop interface. To ground the redesign in real patterns, I started this process by documenting the current post container and its microinteractions - describing and defining the triggers, rules, feedback, loops, and modes of how the component behaves.</p>
+            
+            <div class="process-image">
+                <img src="https://via.placeholder.com/605x294/d9d9d9/d9d9d9" alt="Process documentation" />
+            </div>
+            
+            <p>Next, I returned to the platform to study Handshake's broader design language. I examined typography, color usage, button treatments, and existing microinteractions across the site. This helped me identify key visual and behavioral patterns, including how Handshake uses motion and color to guide attention. I compiled these findings into a working brand reference to maintain consistency throughout the redesign. One notable insight was Handshake's highly interactive onboarding flow. Users are introduced early to their signature color palette: D3FB53 and 062326. These appear not only in call-to-action elements, but also as gradients and accent details throughout the interface. Motion and animation play a significant role in reinforcing hierarchy and drawing attention.</p>
+            
+            <div class="process-image">
+                <img src="handshake_branding.png" alt="Handshake Branding" />
+            </div>
+            
+            <div class="content-text">
+                <p>To ensure I fully understood the system's foundations, I recreated the original post container through code. This exercise clarified the functional boundaries of the component and the experience users expect from it. Once the replication matched the live version, I transitioned into the redesign phase.</p>
+                
+                <p>"Don't reinvent the wheel" - something that was encouraged early on in this process (thank you Jervo) that I kept in mind while designing. Handshake's information hierarchy already aligns with familiar social-platform patterns (e.g., LinkedIn, Facebook). Reworking this hierarchy would create unnecessary cognitive load for users who are accustomed to a standardized layout. Instead, I chose to preserve the structural skeleton-expandable captions, engagement icons, and logical information grouping-and build on top of it. With this in mind, my focus shifted to elevating the interaction quality.</p>
+                
+                <p>For example, adding a hover state to embedded links using Handshake's signature green creates a clearer signal that an element is interactive; the hover state is more immediate and noticeable than a cursor change alone. Users benefit from stronger visual feedback. Another example is using the brand's color and signature animation styles to drive engagement. Introducing branded colors and subtle microinteractions to actionable icons (like the heart, comment, or bookmark) increases clarity and encourages exploration. These enhancements add personality without straying from established platform norms.</p>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution-section">
+            <h2>Solution</h2>
+            <p>In its final form, I delivered a fully interactive prototype that not only aligned with Handshake's visual system but also introduced new microinteraction patterns that improved clarity, reduced friction, and created a more engaging browsing experience. Rebuilding the existing post container from scratch gave me a deeper understanding of component architecture, state management, and event-driven interaction design. Implementing my redesign required applying front-end fundamentals: HTML structure, responsive CSS, animations, and JavaScript logic. Knowing these fundamentals allowed me to create interactions that felt smooth, intentional, and consistent with the brand ecosystem.</p>
+            <h3>Collapsible Caption</h3>
+            <div class="solution-video">
+                <div class="video-placeholder"></div>
+            </div>
+            <p>The original prototype included a "see more" action to expand long captions, but lacked a corresponding "see less" control. Through testing, it became clear that this created unnecessary friction - especially for users browsing many posts at once. Without a way to collapse captions back to their original state, users were forced to scroll through increasingly long posts, which increased cognitive load and made it harder to relocate previous content. To address this, I introduced a "see less" function, allowing captions to toggle between expanded and collapsed states. This maintains context while giving users control over how much content they view at a time.</p>
+        </section>
+    </div>
+</body>
+</html>
