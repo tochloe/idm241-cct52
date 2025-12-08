@@ -52,10 +52,12 @@
         <!-- Process and Insight Section -->
         <section class="process-section">
             <h2>Process and Insight</h2>
-            <p>Being a regular Handshake user, I was already familiar with Handshake's desktop interface. To ground the redesign in real patterns, I started this process by documenting the current post container and its microinteractions - describing and defining the triggers, rules, feedback, loops, and modes of how the component behaves.</p>
+            <p>Being a regular Handshake user, I was already familiar with Handshake's desktop interface. To ground the redesign in real patterns, I started this process by documenting the current post container and its microinteractions - describing and defining the triggers, rules, feedback, loops, and modes of how the component behaves.
+                <br> This is the original:
+            </p>
             
             <div class="process-image">
-                <img src="https://via.placeholder.com/605x294/d9d9d9/d9d9d9" alt="Process documentation" />
+                <img src="ref_handshake.gif" alt="Process documentation" />
             </div>
             
             <p>Next, I returned to the platform to study Handshake's broader design language. I examined typography, color usage, button treatments, and existing microinteractions across the site. This helped me identify key visual and behavioral patterns, including how Handshake uses motion and color to guide attention. I compiled these findings into a working brand reference to maintain consistency throughout the redesign. One notable insight was Handshake's highly interactive onboarding flow. Users are introduced early to their signature color palette: D3FB53 and 062326. These appear not only in call-to-action elements, but also as gradients and accent details throughout the interface. Motion and animation play a significant role in reinforcing hierarchy and drawing attention.</p>
@@ -78,11 +80,33 @@
             <h2>Solution</h2>
             <p>In its final form, I delivered a fully interactive prototype that not only aligned with Handshake's visual system but also introduced new microinteraction patterns that improved clarity, reduced friction, and created a more engaging browsing experience. Rebuilding the existing post container from scratch gave me a deeper understanding of component architecture, state management, and event-driven interaction design. Implementing my redesign required applying front-end fundamentals: HTML structure, responsive CSS, animations, and JavaScript logic. Knowing these fundamentals allowed me to create interactions that felt smooth, intentional, and consistent with the brand ecosystem.</p>
             <h3>Collapsible Caption</h3>
-            <div class="solution-video">
-                <div class="video-placeholder"></div>
-            </div>
+            <img class="video-placeholder" src="caption_expanding.gif" alt="Expanding Captions gif">
             <p>The original prototype included a "see more" action to expand long captions, but lacked a corresponding "see less" control. Through testing, it became clear that this created unnecessary friction - especially for users browsing many posts at once. Without a way to collapse captions back to their original state, users were forced to scroll through increasingly long posts, which increased cognitive load and made it harder to relocate previous content. To address this, I introduced a "see less" function, allowing captions to toggle between expanded and collapsed states. This maintains context while giving users control over how much content they view at a time.</p>
+            
+            <h3>Inline Commenting</h3>
+             <!--image here-->
+             <img class="video-placeholder" src="inline_comment.gif" alt="Inline Commenting gif">
+            <p>Previously, tapping the comment icon navigated users away from the feed and into a dedicated post view. This abrupt transition disrupted the browsing flow and created an unnecessary page change for users who simply wanted to leave a quick comment. To minimize this friction, I redesigned the interaction so comments open as an inline pop-up directly beneath the post card. This allows users to engage without losing their place in the feed and supports more fluid interaction patterns.</p>
+
+            <h3>Refining Microinteractions</h3>
+            <!--image-->
+            <img class="video-placeholder" src="microinteractions.gif" alt="Microinteractions Tab gif">
+            <p>I also enhanced the interaction bar by introducing distinct microinteractions for the heart, comment, and bookmark icons. These subtle animations reinforce the unique purpose of each action and provide immediate feedback, improving both usability and delight. The individualized microinteractions help users better understand the system’s response while making the interface feel more responsive and polished.</p>
         </section>
+
+        <section class="results-section">
+            <h2>Results</h2>
+            <p>Over the course of ten weeks, this project allowed me to move fluidly between research, design, and front-end development. Working as a solo UX/UI designer and developer pushed me to translate conceptual interaction ideas into functional, production-ready code, strengthening my understanding of how design decisions manifest in the browser.
+                <br> One of the most meaningful takeaways was learning how to think through design constraints as a developer. Every microinteraction, hover state, and animation needed to be technically feasible, performant, and accessible. This dual perspecstive allowed me to make design choices that were not only visually compelling, but also maintainable and scalable from an developer’s standpoint.
+                <br> Over this ten-week project, I moved seamlessly between research, design, and front-end development. My biggest takeaway was learning to think through design constraints as a developer. Every microinteraction had to be feasible, performant, and accessible. Balancing these considerations helped me create solutions that are both visually engaging and technically scalable.
+                <br> If given more time, I would connect this into a real database allowing users to be able to post a comment and then design the process for that. This would mimic the real experience of commenting and would allow me to visualize the commenting experience that matches what I had designed.
+                <br> I delivered a fully interactive prototype that aligns with Handshake’s visual system while introducing microinteractions that enhance clarity and reduce friction. Rebuilding the post container from scratch strengthened my grasp of component architecture, state management, and event-driven design, and applying core front-end skills: HTML structure, responsive CSS, animation, and JavaScript. These allowed me to create interactions that feel smooth and intentional. </p>
+        </section>
+    
+    
+    
     </div>
+    
+    
 </body>
 </html>
