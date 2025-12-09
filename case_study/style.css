@@ -18,6 +18,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: var(--black);
+}
+
 /* Container */
 .container {
     max-width: 730px;
